@@ -1,0 +1,159 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdullah Omar Nasif, n/a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+F:\ARM Cortex\Texus Instruments\Work Place\new Workspace\Blinkywith Button\LED_withButton.uvprojx
+Project File Date:  09/01/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling Main.c...
+delay.h(7): warning:  #1295-D: Deprecated declaration Decrement - give arg types
+  void Decrement();
+delay.h(10): warning:  #1295-D: Deprecated declaration PLL_Init_80MHz - give arg types
+  void PLL_Init_80MHz();
+Main.c(107): warning:  #111-D: statement is unreachable
+  return 0;
+Main.c: 3 warnings, 0 errors
+compiling arm_nn_activations_q15.c...
+compiling delay.c...
+delay.h(7): warning:  #1295-D: Deprecated declaration Decrement - give arg types
+  void Decrement();
+delay.h(10): warning:  #1295-D: Deprecated declaration PLL_Init_80MHz - give arg types
+  void PLL_Init_80MHz();
+delay.c(25): warning:  #61-D: integer operation result is out of range
+  	
+YSCTL->RCC2 |= (1 << 31);
+delay.c(25): warning:  #68-D: integer conversion resulted in a change of sign
+  	
+YSCTL->RCC2 |= (1 << 31);
+delay.c: 4 warnings, 0 errors
+compiling arm_nn_activations_q7.c...
+compiling arm_relu_q15.c...
+compiling arm_relu_q7.c...
+compiling arm_convolve_1x1_HWC_q7_fast_nonsquare.c...
+compiling arm_convolve_HWC_q15_basic.c...
+compiling arm_convolve_HWC_q15_fast.c...
+compiling arm_convolve_HWC_q7_RGB.c...
+compiling arm_convolve_HWC_q7_basic.c...
+compiling arm_convolve_HWC_q7_basic_nonsquare.c...
+compiling arm_convolve_HWC_q7_fast.c...
+compiling arm_convolve_HWC_q7_fast_nonsquare.c...
+compiling arm_depthwise_conv_u8_basic_ver1.c...
+compiling arm_depthwise_separable_conv_HWC_q7.c...
+compiling arm_depthwise_separable_conv_HWC_q7_nonsquare.c...
+compiling arm_nn_mat_mult_kernel_q7_q15.c...
+compiling arm_nn_mat_mult_kernel_q7_q15_reordered.c...
+compiling arm_fully_connected_mat_q7_vec_q15.c...
+compiling arm_fully_connected_mat_q7_vec_q15_opt.c...
+compiling arm_fully_connected_q15.c...
+compiling arm_fully_connected_q15_opt.c...
+compiling arm_fully_connected_q7.c...
+compiling arm_fully_connected_q7_opt.c...
+compiling arm_nn_mult_q15.c...
+compiling arm_nn_mult_q7.c...
+compiling arm_q7_to_q15_no_shift.c...
+compiling arm_nntables.c...
+compiling arm_q7_to_q15_reordered_no_shift.c...
+compiling arm_pool_q7_HWC.c...
+compiling arm_softmax_q15.c...
+compiling arm_softmax_q7.c...
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=1328 RO-data=652 RW-data=16 ZI-data=608  
+".\Objects\LED_withButton.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: NN Lib Version: 1.2.0
+   * Component: DSP Variant: Library Version: 1.7.0
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\NN\Include
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+
+   * Component: ARM::CMSIS:NN Lib:1.2.0
+      Include file:  CMSIS\NN\Include\arm_nnfunctions.h
+      Source file:   CMSIS\NN\Source\ActivationFunctions\arm_nn_activations_q7.c
+      Source file:   CMSIS\NN\Source\ActivationFunctions\arm_nn_activations_q15.c
+      Source file:   CMSIS\NN\Source\ActivationFunctions\arm_relu_q7.c
+      Source file:   CMSIS\NN\Source\ActivationFunctions\arm_relu_q15.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q7_RGB.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q15_basic.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q15_fast.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_depthwise_separable_conv_HWC_q7.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_depthwise_separable_conv_HWC_q7_nonsquare.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_nn_mat_mult_kernel_q7_q15.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_nn_mat_mult_kernel_q7_q15_reordered.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_1x1_HWC_q7_fast_nonsquare.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q7_basic.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q7_basic_nonsquare.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q7_fast.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_convolve_HWC_q7_fast_nonsquare.c
+      Source file:   CMSIS\NN\Source\ConvolutionFunctions\arm_depthwise_conv_u8_basic_ver1.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_q7.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_q7_opt.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_q15.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_q15_opt.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_mat_q7_vec_q15.c
+      Source file:   CMSIS\NN\Source\FullyConnectedFunctions\arm_fully_connected_mat_q7_vec_q15_opt.c
+      Source file:   CMSIS\NN\Source\NNSupportFunctions\arm_q7_to_q15_reordered_no_shift.c
+      Source file:   CMSIS\NN\Source\NNSupportFunctions\arm_nntables.c
+      Source file:   CMSIS\NN\Source\NNSupportFunctions\arm_q7_to_q15_no_shift.c
+      Source file:   CMSIS\NN\Source\NNSupportFunctions\arm_nn_mult_q15.c
+      Source file:   CMSIS\NN\Source\NNSupportFunctions\arm_nn_mult_q7.c
+      Source file:   CMSIS\NN\Source\PoolingFunctions\arm_pool_q7_HWC.c
+      Source file:   CMSIS\NN\Source\SoftmaxFunctions\arm_softmax_q15.c
+      Source file:   CMSIS\NN\Source\SoftmaxFunctions\arm_softmax_q7.c
+
+   * Component: ARM::CMSIS:DSP:Library:1.7.0
+      Include file:  CMSIS\DSP\Include\arm_math.h
+      Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
